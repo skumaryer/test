@@ -2,3 +2,16 @@ testing
 ymal
 from 
 python
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: conf
+  labels:
+    name: conf
+  namespace: conf
+data:
+  blackbox.yml: |
+    - labels:
+        module: http_2xx_get
+      targets:
+      - https://xxx.asd.com/pa
