@@ -1,0 +1,14 @@
+team2:
+    id:10000
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: "$ensure"
+    groups:
+    -nyc
+    -app
+ team3:
+    id:10000
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: "$ensure"
+    groups:
+    -nyc
+    -tc
