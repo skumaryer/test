@@ -1,17 +1,22 @@
-testing
-ymal
-from 
-python
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: conf
-  labels:
-    name: conf
-  namespace: conf
-data:
-  blackbox.yml: |
-    - labels:
-        module: http_2xx_get
-      targets:
-      - https://xxx.asd.com/pa
+start_id:10000
+plays:
+  team1:
+    id:10000
+    en_loc_gp_creation: '''test'''
+    ensure: true
+  team2:
+    id:10002
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: $ensure
+  team3:
+    id:10003
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: $ensure
+  team4:
+    id:10004
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: $ensure
+  team5:
+    id:10005
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: $ensure
