@@ -20,3 +20,7 @@ plays:
     id:10005
     en_loc_gp_creation: $en_loc_gp_creation
     ensure: $ensure
+  team1011:
+    id:10006
+    en_loc_gp_creation: $en_loc_gp_creation
+    ensure: $ensure
