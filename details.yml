@@ -10,6 +10,7 @@ team2:
     en_loc_gp_creation: $en_loc_gp_creation
     ensure: "$ensure"
     groups:
+    -team101
     -team100
     -nyc
     -tc
